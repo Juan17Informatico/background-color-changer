@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.button-click{
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 25px;
+    
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button-click:hover{
+    background-color: whitesmoke;
+    color: #000;
+    border-color: blue;
+    
+}
+
+
+
+
