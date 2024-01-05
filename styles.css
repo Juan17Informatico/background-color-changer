@@ -10,11 +10,10 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000;
 }
 
-.button-click{
-    background-color: #000;
+.btn-click{
+    background-color: transparent;
     color: #fff;
     border-color: #fff;
     border-style: solid;
@@ -25,10 +24,10 @@
     font-size: 20px;
 }
 
-.button-click:hover{
-    background-color: whitesmoke;
-    color: #000;
-    border-color: blue;
+.btn-click:hover{
+    background-color: transparent;
+    color: #d9d0d0;
+    border-color: #d9d0d0;
     
 }
 
