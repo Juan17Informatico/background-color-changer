@@ -9,16 +9,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
+    width: 100%;
+    
 }
 
 .btn-click{
     background-color: transparent;
-    color: #fff;
+    color: black;
     border-color: #fff;
     border-style: solid;
     border-radius: 25px;
-    
     padding: 15px;
     cursor: pointer;
     font-size: 20px;
@@ -26,11 +27,45 @@
 
 .btn-click:hover{
     background-color: transparent;
-    color: #d9d0d0;
+    color: black;
     border-color: #d9d0d0;
     
 }
 
+.section{
+    display: flex;
+    justify-content: inherit;
+    align-items: inherit;
+    width: 25%;
+    height: 90%;
+    border: solid 1px black;
+}
 
+.section-aleatorio{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
 
+    background-color: #b35f72;
+}
+
+@media (max-width: 768px){
+    .main{
+        flex-direction: column;
+    }
+    .section{
+        width: 100%;
+        height: 20%;
+        
+    }
+}
