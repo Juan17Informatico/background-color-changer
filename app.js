@@ -1,17 +1,32 @@
-const colorRgb = document.getElementById('colorRgb');
-const btnClick = document.getElementById('btn-click');
 
-let randomNum = () =>{
+
+const colorRgb1 = document.getElementById('colorRgb1');
+const btnClick1 = document.getElementById('btn-click1');
+const section1 = document.getElementById('section1');
+
+const randomNum = () =>{
     return Math.floor(Math.random()*256);
 };
 
-let changeColor = () => {
-    const rgb = {r: randomNum(), g: randomNum(), b: randomNum()};
-    console.log(rgb);
-    let randomColor = `rgb(${randomNum()}, ${randomNum()}, ${randomNum()})`;
-    console.log(randomColor);
-    document.body.style.backgroundColor = randomColor;
-    colorRgb.innerText = randomColor;
+const changeColor = () => {
+    const rgb = {
+        r: randomNum(), 
+        g: randomNum(), 
+        b: randomNum(),
+    };
+
+    return rgb;
+    
+    // document.body.style.backgroundColor = randomColor;
+    // colorRgb1.innerText = randomColor;
+}
+
+const asignarColor = (r , g , b, id) => {
+    
+    let colorStyle = `rgb(${r},${g},${b})`;
+
+    console.log(colorStyle)
+    id.style.backgroundColor = colorStyle;
 }
 
 function rgbColor(rgb){
@@ -30,7 +45,12 @@ function rgbToHex(rgb){
 
 }
 
-btnClick.addEventListener("click", changeColor);
+btnClick1.addEventListener("click", () => {
+    let rgb = changeColor();
+
+    asignarColor(rgb.r, rgb.g, rgb.b, section1);
+    
+});
 window.addEventListener("load", changeColor);
 
 
