@@ -1,8 +1,14 @@
 const miModulo = (() => {
 
     const colorRgb1 = document.getElementById('colorRgb1');
-    const btnClick = document.getElementById('btn-click-1');
+    const btnClick1 = document.getElementById('btnClick1');
+    const btnClick2 = document.getElementById('btnClick2');
+    const btnClick3 = document.getElementById('btnClick3');
+    const btnClick4 = document.getElementById('btnClick4');
     const section1 = document.getElementById('section1');
+    const section2 = document.getElementById('section2');
+    const section3 = document.getElementById('section3');
+    const section4 = document.getElementById('section4');
 
 
     const randomNum = () => {
@@ -48,13 +54,33 @@ const miModulo = (() => {
 
 
 
-    btnClick.addEventListener("click", () => {
+
+
+    btnClick1.addEventListener("click", () => {
         let rgb = changeColor();
 
         asignarColor(rgb.r, rgb.g, rgb.b, section1);
 
     });
-    window.addEventListener("load", changeColor);
+    btnClick2.addEventListener("click", () => {
+        let rgb = changeColor();
+
+        asignarColor(rgb.r, rgb.g, rgb.b, section2);
+
+    });
+    btnClick3.addEventListener("click", () => {
+        let rgb = changeColor();
+
+        asignarColor(rgb.r, rgb.g, rgb.b, section3);
+
+    });
+    btnClick4.addEventListener("click", () => {
+        let rgb = changeColor();
+
+        asignarColor(rgb.r, rgb.g, rgb.b, section4);
+
+    });
+
 
 
 
