@@ -20,6 +20,8 @@ const miModulo = (() => {
     const resultHexa3 = document.getElementById('result-hexa-span-3');
     const resultHexa4 = document.getElementById('result-hexa-span-4');
 
+    const random = document.querySelector('#random');
+
     const randomNum = () => {
         return Math.floor(Math.random() * 256);
     };
@@ -63,10 +65,6 @@ const miModulo = (() => {
         element.innerText = rgb;
     }
 
-    function rgbToText(hex, element){
-        element.innerText = hex;
-    }
-
     function rgbToHex(color) {
         // Asegurarse de que los valores estén en el rango correcto (0-255)
         const clamp = (value) => Math.max(0, Math.min(255, value));
@@ -88,6 +86,39 @@ const miModulo = (() => {
 
 
 
+
+    random.addEventListener('click', () => {
+        let rgb1 = changeColor();
+        let rgb2 = changeColor();
+        let rgb3 = changeColor();
+        let rgb4 = changeColor();
+
+        asignarColor(rgb1.r, rgb1.g, rgb4.b, section1);
+        asignarColor(rgb2.r, rgb2.g, rgb4.b, section2);
+        asignarColor(rgb3.r, rgb3.g, rgb4.b, section3);
+        asignarColor(rgb4.r, rgb4.g, rgb4.b, section4);
+
+        let rgbText1 = rgbColor(rgb1);
+        let rgbText2 = rgbColor(rgb2);
+        let rgbText3 = rgbColor(rgb3);
+        let rgbText4 = rgbColor(rgb4);
+
+        rgbToText(rgbText1,resultRgb1);
+        rgbToText(rgbText2,resultRgb2);
+        rgbToText(rgbText3,resultRgb3);
+        rgbToText(rgbText4,resultRgb4);
+        
+        let hex1 = rgbToHex(rgb1);
+        let hex2 = rgbToHex(rgb2);
+        let hex3 = rgbToHex(rgb3);
+        let hex4 = rgbToHex(rgb4);
+        
+        rgbToText(hex1, resultHexa1);
+        rgbToText(hex2, resultHexa2);
+        rgbToText(hex3, resultHexa3);
+        rgbToText(hex4, resultHexa4);
+
+    });
 
 
     btnClick1.addEventListener("click", () => {
