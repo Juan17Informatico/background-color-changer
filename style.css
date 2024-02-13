@@ -92,6 +92,9 @@
   border-radius: 15px;
   border: 2px solid black;
 }
+.resultados p {
+  margin: 5px;
+}
 
 .footer{
   display: flex;
@@ -101,6 +104,11 @@
   width: 100%;
 
   background-color: rgba(96, 95, 207,0.8);
+}
+
+.copy{
+  width: 16px;
+  height: 16px;
 }
 
 @media (max-width: 768px){
