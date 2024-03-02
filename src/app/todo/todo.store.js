@@ -1,5 +1,8 @@
 
-
+/**
+ * 
+ * @returns Retorna un nuevo color RGB con sus valores aleatorios
+ */
 const changeColor = () => {
     const rgb = {
         r: randomNum(),
@@ -7,9 +10,6 @@ const changeColor = () => {
         b: randomNum(),
     };
     return rgb;
-
-    // document.body.style.backgroundColor = randomColor;
-    // colorRgb1.innerText = randomColor;
 }
 
 /**
@@ -26,13 +26,13 @@ const asignarColor = (r, g, b, id) => {
     id.style.backgroundColor = colorStyle;
 }
 
-
+/**
+ * 
+ * @returns Retorna un numero azar entre 1 y 256
+ */
 const randomNum = () => {
     return Math.floor(Math.random() * 256);
 };
-
-
-
 
 /**
 * 
@@ -40,15 +40,7 @@ const randomNum = () => {
 */
 function rgbToText(rgb, element) {
     element.innerText = rgb;
- }
-
-
-
-// Ejemplo de uso:
-const colorRGB = { r: 255, g: 127, b: 64 };
-const colorHex = rgbToHex(colorRGB);
-console.log(colorHex); // Salida: "#FF7F40"
-
+}
 
 
 export default {
