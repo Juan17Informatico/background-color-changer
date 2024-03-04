@@ -19,26 +19,22 @@ export const renderContent = (element) => {
     const footerElement = createDiv("footer", "footer");
     let sectionArr = [];
     for (let i = 0; i < 4; i++) {
-        sectionArr.push(createDiv("section", `section section-${i+1}`,`section${i+1}`));
+        sectionArr.push(createDiv("section", `section section-${i + 1}`, `section${i + 1}`));
     }
-
-
-
-
 
     navElement.innerHTML = nav;
     footerElement.innerHTML = footer;
     sectionArr.forEach((value, i) => {
         value.innerHTML = sections[i];
     });
-    
+
     console.log(sectionArr);
 
 
     element.append(navElement);
     element.append(mainElement);
-     sectionArr.forEach(value => {
+    sectionArr.forEach(value => {
         mainElement.append(value);
-     });
+    });
     element.append(footerElement);
 }
