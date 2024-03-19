@@ -19,7 +19,7 @@ import { changeColor, asignarColor, rgbColor, rgbToText, rgbToHex } from "./../t
 //             rgb4, } = rgbs;
 
 //         for (let i = 0; i < sections.length; i++) {
-            
+
 //             asignarColor(rgb1.r, rgb1.g, rgb4.b, section[i]);
 
 //         }
@@ -51,16 +51,18 @@ import { changeColor, asignarColor, rgbColor, rgbToText, rgbToHex } from "./../t
 //     });
 // }
 
-export const cambiarColor = (btn) => {
-    btn.addEventListener("click", () => {
-        let rgb = changeColor();
+export const cambiarColor = (section) => {
 
-        asignarColor(rgb.r, rgb.g, rgb.b, section1);
+    const sectionDiv = document.getElementById(section);
 
-        let rgbText = rgbColor(rgb);
+    let rgb = changeColor();
 
-        rgbToText(rgbText, resultRgb1);
-        let hex = rgbToHex(rgb);
-        rgbToText(hex, resultHexa1);
-    });
+    asignarColor(rgb.r, rgb.g, rgb.b, sectionDiv);
+
+    // let rgbText = rgbColor(rgb);
+
+    // rgbToText(rgbText, resultRgb1);
+    // let hex = rgbToHex(rgb);
+    // rgbToText(hex, resultHexa1);
+
 }
