@@ -140,3 +140,7 @@
     height: 80%;
   }
 }
+
+.cursor{
+  cursor: pointer;
+}
