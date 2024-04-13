@@ -28,7 +28,7 @@ export const renderContent = (element) => {
         value.innerHTML = sections[i];
     });
 
-    console.log(sectionArr);
+    // console.log(sectionArr);
 
 
     element.append(navElement);

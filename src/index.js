@@ -1,9 +1,12 @@
 import { renderContent } from "./app/renderHTML/render.js";
 import {cambiarColor, randomColor}  from "./app/listeners/btn-listeners.js";
+import { copyLogic } from "./app/copyLogic/copyLogic.js";
 
 
 export const initApp = (element) => {
     renderContent(element); 
+
+    const idCopyRgb1 = document.getElementById("idCopyRgb1");
     const btnClick1 = document.getElementById('btnClick1');
     const btnClick2 = document.getElementById('btnClick2');
     const btnClick3 = document.getElementById('btnClick3');
@@ -40,4 +43,7 @@ export const initApp = (element) => {
     btnClick4.addEventListener('click', ()=>{
         cambiarColor("section4", resultHexa4, resultRgb4);
     }); 
+
+    copyLogic("copyRgb1", "result-rgb-span-1");
+
 }
