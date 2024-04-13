@@ -6,7 +6,7 @@ export const copyLogic = (id, idResult) => {
     const idResultImg = document.querySelector(`#${idResult}`); 
     
     idBtn.addEventListener('click', () => {
-        console.log(idBtn, idResultImg);
+        console.log(idResultImg.textContent);
 
     });
 

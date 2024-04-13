@@ -45,5 +45,8 @@ export const initApp = (element) => {
     }); 
 
     copyLogic("copyRgb1", "result-rgb-span-1");
+    copyLogic("copyRgb2", "result-rgb-span-2");
+    copyLogic("copyRgb3", "result-rgb-span-3");
+    copyLogic("copyRgb4", "result-rgb-span-4");
 
 }
