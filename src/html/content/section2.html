@@ -1,15 +1,29 @@
-<button class="btn-clicks" id="btnClick2">
-  Click me
-</button>
+<div class="btn-containers">
+  <button class="btn-clicks" id="btnClick2">
+    Click me
+  </button>
+</div>
 <div class="resultados">
-  <p class="resultado-rgb">
-    RGB: <span id="result-rgb-span-2"></span> 
-    <img src="./src/assets/img/copy.svg" alt="copy" width="18px" class="cursor" id="copyRgb2" >
-    <img src="./src/assets/img/check.svg" alt="check" width="18px">
-  </p>
-  <p class="resultado-hexa">
-    Hexa: <span id="result-hexa-span-2"></span>
-    <img src="./src/assets/img/copy.svg" alt="copy"   width="18px" class="cursor" id="copyHexa2">
-    <img src="./src/assets/img/check.svg" alt="check" width="18px" >
-  </p>
+  <div class="resultados-inside">
+    <p class="resultado-rgb">
+      RGB: <span id="result-rgb-span-2"></span>
+      <img src="./src/assets/img/copy.svg" alt="copy" width="18px" class="cursor" id="copyRgb2">
+      <img src="./src/assets/img/check.svg" alt="check" width="18px" class="display-none" id="checkRgb2" >
+
+    </p>
+    <div class="loader">
+      <img src="/public/loading.png" alt="Loading" id="loadingRgb2" class="display-none" />
+    </div>
+  </div>
+  <div class="resultados-inside">
+    <p class="resultado-hexa">
+      Hexa: <span id="result-hexa-span-2"></span>
+      <img src="./src/assets/img/copy.svg" alt="copy" width="18px" class="cursor" id="copyHex2">
+      <img src="./src/assets/img/check.svg" alt="check" width="18px" class="display-none" id="checkHex2" >
+    </p>
+    <div class="loader">
+      <img src="/public/loading.png" alt="Loading" id="loadingHex2" class="display-none" />
+    </div>
+  </div>
+
 </div>

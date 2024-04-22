@@ -94,7 +94,7 @@
 .resultados {
   margin: 5px;
   padding: 10px;
-  width: 70%;
+  width: 80%;
   height: 20%;
   background-color: rgba(49, 47, 47, 0.815);
   color: white;
@@ -121,6 +121,11 @@
   height: 16px;
 }
 
+.display-none{
+  display: none;
+}
+
+
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
@@ -133,14 +138,34 @@
     flex-direction: row;
     width: 100%;
     height: 25%;
-
+    padding: 20px;
   }
 
   .resultados {
-    height: 80%;
+    width: 80%;
+    height: 100%;
   }
 }
 
 .cursor{
   cursor: pointer;
+}
+
+.loader{
+  display: inline-block;
+}
+
+.loader img {
+  width: 25px; /* Ajusta el tamaño de la imagen según necesites */
+  animation: spin 2s linear infinite; /* Define la animación */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.resultados-inside{
+  display: flex;
+  flex-direction: row;
 }

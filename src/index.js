@@ -1,6 +1,7 @@
 import { renderContent } from "./app/renderHTML/render.js";
 import {cambiarColor, randomColor}  from "./app/listeners/btn-listeners.js";
 import { copyLogic } from "./app/copyLogic/copyLogic.js";
+import { nameCopyListHexa, nameCopyListRgb } from "./app/nameCopyList.js";
 
 
 export const initApp = (element) => {
@@ -44,9 +45,16 @@ export const initApp = (element) => {
         cambiarColor("section4", resultHexa4, resultRgb4);
     }); 
 
-    copyLogic("copyRgb1", "result-rgb-span-1");
-    copyLogic("copyRgb2", "result-rgb-span-2");
-    copyLogic("copyRgb3", "result-rgb-span-3");
-    copyLogic("copyRgb4", "result-rgb-span-4");
+
+    
+    nameCopyListRgb.forEach(element =>{
+        copyLogic(element.copyBtn, element.resultText, element?.check, element.loadingId);
+    });
+    nameCopyListHexa.forEach(element =>{
+        copyLogic(element.copyBtn, element.resultText, element?.check, element.loadingId);
+    });
 
 }
+
+
+
