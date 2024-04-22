@@ -12,21 +12,21 @@
     <div class="resultados-inside">\r
         <p class="resultado-rgb">\r
             RGB: <span id="result-rgb-span-1"></span>\r
-            <img src="./../img/copy.svg" alt="copy"   width="18px" class="cursor" id="copyRgb1">\r
-            <img src="./../img/check.svg" alt="check" width="18px" class="display-none" id="checkRgb1">\r
+            <img src="/background-color-changer/public/img/copy.svg" alt="copy"   width="18px" class="cursor" id="copyRgb1">\r
+            <img src="./public/img/check.svg" alt="check" width="18px" class="display-none" id="checkRgb1">\r
                   \r
         </p>\r
         <div class="loader">\r
-            <img src="./../loading.png" alt="Loading" id="loadingRgb1" class="display-none" />\r
+            <img src="./public/loading.png" alt="Loading" id="loadingRgb1" class="display-none" />\r
         </div>  \r
     </div>\r
     <div class="resultados-inside">\r
         <p class="resultado-hexa">Hexa: \r
             <span id="result-hexa-span-1"></span>\r
-            <img src="./../img/copy.svg" alt="copy"   width="18px"  class="cursor" id="copyHex1">\r
-            <img src="./../img/check.svg" alt="check" width="18px" class="display-none" id="checkHex1">\r
+            <img src="./public/img/copy.svg" alt="copy"   width="18px"  class="cursor" id="copyHex1">\r
+            <img src="./public/img/check.svg" alt="check" width="18px" class="display-none" id="checkHex1">\r
             <div class="loader">\r
-                <img src="./../loading.png" alt="Loading" id="loadingHex1" class="display-none" />\r
+                <img src="./public/loading.png" alt="Loading" id="loadingHex1" class="display-none" />\r
             </div> \r
         </p>\r
     </div>\r
