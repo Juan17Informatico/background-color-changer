@@ -12,7 +12,7 @@
     <div class="resultados-inside">\r
         <p class="resultado-rgb">\r
             RGB: <span id="result-rgb-span-1"></span>\r
-            <img src="./background-color-changer/img/copy.svg" alt="copy"   width="18px" class="cursor" id="copyRgb1">\r
+            <img src="/background-color-changer/img/copy.svg" alt="copy"   width="18px" class="cursor" id="copyRgb1">\r
             <img src="./public/img/check.svg" alt="check" width="18px" class="display-none" id="checkRgb1">\r
                   \r
         </p>\r
