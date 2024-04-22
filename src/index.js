@@ -7,7 +7,6 @@ import { nameCopyListHexa, nameCopyListRgb } from "./app/nameCopyList.js";
 export const initApp = (element) => {
     renderContent(element); 
 
-    const idCopyRgb1 = document.getElementById("idCopyRgb1");
     const btnClick1 = document.getElementById('btnClick1');
     const btnClick2 = document.getElementById('btnClick2');
     const btnClick3 = document.getElementById('btnClick3');
